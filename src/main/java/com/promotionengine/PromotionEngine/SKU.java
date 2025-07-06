@@ -1,7 +1,7 @@
 package com.promotionengine.PromotionEngine;
 
 public enum SKU {
-    A(50), B(30), C(20), D(15);
+    A(Constants.A_PRICE), B(Constants.B_PRICE), C(Constants.C_PRICE), D(Constants.D_PRICE);
     private final int price;
 
     SKU(int price){
