@@ -22,10 +22,10 @@ The base prices of the SKU's, promo prices, required quantity for the discounts 
 The input can be given in input.txt file present in the src/main/resource/input.txt and the output (Total) will be displayed on the console.
 
 Files:
-SKU, Constant, Promotion, Cart - For maintaing SKUs, Constants, creating carts and the interface Promotion defines the methods involved.
-Processing, PromotionEngine - For processing the data and calculating the total.
-ComboPromotion, NItemsPromotion - These implement the Promotion interface and give their respective implementations.
-PromotionEngineApplication, BillingService, OutputPrint - For parsing the input file, working on the data and printing the output.
+- SKU, Constant, Promotion, Cart - For maintaining SKUs, Constants, creating carts and the interface Promotion defines the methods involved.
+- Processing, PromotionEngine - For processing the data and calculating the total.
+- ComboPromotion, NItemsPromotion - These implement the Promotion interface and give their respective implementations.
+- PromotionEngineApplication, BillingService, OutputPrint - For parsing the input file, working on the data and printing the output.
 
 Tools used in this project are - Java, Gradle. 
 
