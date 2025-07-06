@@ -11,10 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class PromotionEngineApplicationTests {
 
-	// @Test
-	// void contextLoads() {
-	// }
-
 	@Test
 	void testApplyfor4As(){
 		Map<SKU, Integer> cart = new HashMap<>();
@@ -24,5 +20,18 @@ class PromotionEngineApplicationTests {
 		int result = promo.apply(cart);
 		assertEquals(180, result);
 		assertEquals(0, cart.get(SKU.A));
+	}
+
+	@Test
+	void testApplyComboCAndD(){
+		Map<SKU, Integer> cart = new HashMap<>();
+		cart.put(SKU.C, 1);
+		cart.put(SKU.D, 1);
+		ComboPromotion promo = new ComboPromotion(SKU.C, SKU.D, 30);
+		assertTrue(promo.isApplicable(cart));
+		int result = promo.apply(cart);
+		assertEquals(30, result);
+		assertEquals(0, cart.get(SKU.C));
+		assertEquals(0, cart.get(SKU.D));
 	}
 }
