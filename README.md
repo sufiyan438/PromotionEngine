@@ -1,10 +1,19 @@
 This project deals with the implementation of a Promotion Engine where discounts based on bulk purchasing of same type of item or combo discount based on different items is applied. For instance:
 
-Unit price for SKU's
+<!-- Unit price for SKU's
 A: 50
 B: 30
 C: 20
-D: 15
+D: 15 -->
+
+## Unit Price for SKUs
+
+The base unit prices of the items are as follows:
+
+- **A**: 50
+- **B**: 30
+- **C**: 20
+- **D**: 15
 
 Active Promotions
 3 of A's for 130
