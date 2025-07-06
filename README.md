@@ -1,0 +1,1 @@
+This project deals with the implementation of a Promotion Engine where discounts based on bulk purchasing of same type of item or combo discount based on different items is applied.

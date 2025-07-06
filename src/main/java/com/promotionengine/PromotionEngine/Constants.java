@@ -10,5 +10,4 @@ public class Constants {
     public static int B_PRICE = 30;
     public static int C_PRICE = 20;
     public static int D_PRICE = 15;
-
 }
