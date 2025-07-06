@@ -3,7 +3,6 @@ package com.promotionengine.PromotionEngine;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -22,7 +21,9 @@ public class PromotionEngineApplication {
 			}
 		}catch(Exception e){
 			System.out.println(e.getMessage());
+			return;
 		}
+		new Processing().processingAndOutput(cart);
 	}
 
 	private static void processCommand(String line, Cart cart){
